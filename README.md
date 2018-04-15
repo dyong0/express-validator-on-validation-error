@@ -36,6 +36,11 @@ app.get('/passToNextRequestHandler', [
     // Call next() to pass the request to the next request handler
     onValidationError((validationErrors, req, res, next) => {
         // process for validationErrors
+        res.locals = {
+            valuePassed: req.query.testInt
+        };
+
+        // pass this request to the next request handler
         next();
     })
 ], (req, res) => {
