@@ -4,9 +4,17 @@ It's a middleware that handles validation errors.
 An [express.js]( https://github.com/visionmedia/express ) middleware for
 [express-validator]( https://github.com/ctavan/express-validator ).
 
+- [Dependencies](#dependencies)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Lisence](#lisence)
+
+## Dependencies
+- express
+- express-validator
+```
+npm install express express-validator
+```
 
 ## Installation
 ```
