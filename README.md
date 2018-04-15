@@ -16,7 +16,7 @@ npm install express-validator-on-validation-error
 ## Usage
 ```javascript
 const { param, query, body } = require('express-validator/check');
-const onValidationError = require('../lib/onValidationError');
+const { onValidationError, redirectOnValidationError } = require('express-validator-on-validation-error');
 
 app.get('/validate', [
     query('testInt').isInt(),
@@ -45,6 +45,15 @@ app.get('/passToNextRequestHandler', [
     })
 ], (req, res) => {
     res.status(200).send(res.locals.valuePassed);
+});
+
+app.get('/redirectOnValidationError', [
+    query('testInt').isInt(),
+
+    // Redirect to Google on validation error for finding a solution :)
+    redirectOnValidationError('https://google.com')
+], (req, res) => {
+    res.sendStatus(200);
 });
 ```
 
