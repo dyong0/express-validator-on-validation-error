@@ -1,6 +1,6 @@
 {
   "name": "express-validator-on-validation-error",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Middleware that handles validation errors coming from express-validator",
   "main": "index.js",
   "types": "index.d.ts",
