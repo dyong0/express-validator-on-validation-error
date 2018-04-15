@@ -1,0 +1,33 @@
+{
+  "name": "express-validator-on-validation-error",
+  "version": "1.0.0",
+  "description": "Middleware that handles validation errors coming from express-validator",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "homepage": "https://github.com/dyong0/express-validator-on-validation-error",
+  "repository": "https://github.com/dyong0/express-validator-on-validation-error.git",
+  "author": "dyong0",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha $(find test -name '*.test.js')"
+  },
+  "dependencies": {
+    "express-validator": "^5.1.2"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "express": "^4.16.3",
+    "mocha": "^5.1.0",
+    "supertest": "^3.0.0",
+    "@types/express": "^4.11.1",
+    "@types/express-validator": "^3.0.0",
+    "typescript": "next"
+  },
+  "keywords": [
+    "express",
+    "validator",
+    "validation",
+    "validate"
+  ]
+}
